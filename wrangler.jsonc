@@ -5,11 +5,15 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "classnect-api",
+	
 	"main": "src/index.ts",
-	"upload_source_maps": true,
+	"compatibility_date": "2026-03-10",
 	"observability": {
 		"enabled": true
 	},
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
 	"d1_databases": [
 		{
 			"binding": "DB",
